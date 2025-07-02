@@ -14,9 +14,9 @@ const LearnMore = ({ item, onClose }) => {
       {/* Overlay to close the modal */}
       <div className="absolute inset-0 bg-black opacity-50 z-10 cursor-pointer" onClick={onClose} />
 
-      <div className="p-6 h-full md:h-auto bg-white rounded-lg shadow-lg z-50 overflow-y-auto custom-scrollbar w-full md:mx-[10%] lg:w-[1000px] ">
+      <div className="p-6 h-screen md:h-auto bg-white rounded-lg shadow-lg z-50 overflow-y-auto custom-scrollbar w-full md:mx-[10%] lg:w-[1000px] absolute top-0 bottom-0 mt-10 mb-10">
         {/* GRIDED CONTAINER */}
-        <div className="md:grid grid-cols-[45%_65%] gap-2">
+        <div className="md:grid grid-cols-[45%_65%] gap-2 relative">
           {/* Image Section */}
           <div className="mt-4 flex justify-center">
             <img
